@@ -1,46 +1,153 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# 🌟 Powerpuff Girls Show - React + TypeScript 🌟
 
-In the project directory, you can run:
+![Powerpuff Girls](https://media.giphy.com/media/l0MYGBI8s3pNfHXX2/giphy.gif)
 
-### `yarn start`
+Bem-vindo ao projeto **Powerpuff Girls Show**! 💖 Este é um projeto front-end construído com **React**, **TypeScript**, **Jest** e **React Testing Library**, utilizando o padrão de design de **átomos e moléculas**. A aplicação exibe detalhes de um show e seus episódios, com testes unitários para garantir a funcionalidade.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Demo
+🔗 [Clique aqui para ver a demo](https://ppg-app.vercel.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `yarn test`
+- ⚛️ **React**: Biblioteca JavaScript para construção de interfaces dinâmicas.
+- 🦸 **TypeScript**: Superconjunto do JavaScript com tipagem estática.
+- 🧪 **Jest**: Testes unitários rápidos e confiáveis.
+- 🧑‍🔬 **React Testing Library**: Para testes de componentes e interações.
+- ⚙️ **Yarn**: Gerenciador de pacotes utilizado no projeto.
+  
+## 🌳 Estrutura de Componentes - Atomic Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este projeto segue a metodologia **Atomic Design** para a organização dos componentes. Abaixo, a estrutura simplificada:
 
-### `yarn build`
+```bash
+src/
+│
+├── Atoms/
+│   ├── Button.tsx
+│   ├── Image.tsx
+│   ├── Title.tsx
+│   └── Typography.tsx
+├── context/
+│   ├── ShowContext.tsx
+│
+├── Molecules/
+│   ├── EpisodeCard.tsx
+│   ├── Home.tsx
+│   └── ShowDetails.tsx
+│
+└── App.tsx
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧩 Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🔎 **Página Inicial**: Um botão que leva você ao show das Meninas Superpoderosas!
+- 📺 **Detalhes do Show**: Exibe detalhes sobre o show, incluindo uma lista de episódios.
+- 🎬 **Detalhes do Episódio**: Exibe informações detalhadas sobre o episódio selecionado.
+- 🔙 **Botão de Voltar**: Fácil navegação para retornar à página anterior.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧪 Testes Unitários
 
-### `yarn eject`
+Todos os componentes principais foram testados utilizando **Jest** e **React Testing Library**. Os testes garantem que os títulos, botões e a navegação funcionam corretamente.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🚨 Como rodar os testes?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para executar os testes unitários, rode o seguinte comando no terminal:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+yarn test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Isso executará todos os testes definidos em arquivos `.test.tsx`.
 
-## Learn More
+## 🛠️ Como Rodar o Projeto Localmente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o repositório:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone https://github.com/ardsilva/ppg-app
+   ```
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd ppg-app
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   yarn install
+   ```
+
+4. Execute o servidor de desenvolvimento:
+
+   ```bash
+   yarn start
+   ```
+
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto.
+
+## 🧰 Dependências
+
+Aqui estão algumas das principais dependências do projeto:
+
+- **react**: ^18.x
+- **typescript**: ^4.x
+- **jest**: ^27.x
+- **react-testing-library**: ^12.x
+- **styled-components**: Para estilização com CSS-in-JS.
+
+## 🎨 Estilo
+
+O estilo do projeto é gerenciado através de componentes estilizados com **styled-components**, garantindo uma estilização modular e eficiente.
+
+## 🤝 Contribuições
+
+Contribuições são super bem-vindas! Se encontrar algum bug ou tiver uma sugestão de melhoria, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+---
+
+Feito com 💖 por [Alexandre Silva] - [LinkedIn](https://linkedin.com/in/ardsilva87) ✨
+
+---
+
+### 🏅 Créditos
+- Imagens e ícones utilizados no projeto pertencem às suas respectivas fontes.
+  
+---
+
+![Powerpuff Girls](https://media.giphy.com/media/3o7TKFSylhd2pXGx3q/giphy.gif)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+### 📎 Links Úteis
+
+- [Documentação do React](https://reactjs.org/docs/getting-started.html)
+- [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
+- [Documentação do Jest](https://jestjs.io/docs/getting-started)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+
+---
+
+🎉 **Divirta-se explorando os episódios das Meninas Superpoderosas!**
+
+---
+
+### ✨ Inspiração para usar emojis e markdowns:
+- 📝 Títulos e seções com emojis.
+- 🧑‍🔬 Representação dos testes.
+- 🎬 Ícones para detalhes do show.
+- 💻 Demonstração com link de acesso.
+
+---
+
+Espero que goste do projeto! 😊
