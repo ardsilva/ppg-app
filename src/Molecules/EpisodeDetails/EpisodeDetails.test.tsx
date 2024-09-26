@@ -26,7 +26,7 @@ describe('EpisodeDetails Component', () => {
         <MemoryRouter>
           <EpisodeDetails />
         </MemoryRouter>
-      </ShowProvider>
+      </ShowProvider>,
     );
 
     // Verificar se o título do episódio e o summary estão sendo renderizados
@@ -47,7 +47,7 @@ describe('EpisodeDetails Component', () => {
         <MemoryRouter>
           <EpisodeDetails />
         </MemoryRouter>
-      </ShowProvider>
+      </ShowProvider>,
     );
 
     // Simular clique no botão "Back"

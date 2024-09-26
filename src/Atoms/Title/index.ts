@@ -1,5 +1,5 @@
-import Title from "./Title";
+import Title from './Title';
 
-export * from "./Title";
+export * from './Title';
 
 export default Title;

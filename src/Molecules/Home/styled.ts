@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const StyledHome = styled.div(`
   @media (max-width: 767px) {
@@ -7,4 +7,4 @@ export const StyledHome = styled.div(`
     align-items: center;
     margin-top: 50%;
     } 
-  `)
+  `);

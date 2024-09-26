@@ -9,12 +9,12 @@ describe('App Routing', () => {
   test('should render Home component on default route', () => {
     render(
       <ShowProvider>
-      <MemoryRouter initialEntries={['/']}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </MemoryRouter>
-      </ShowProvider>
+        <MemoryRouter initialEntries={['/']}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </MemoryRouter>
+      </ShowProvider>,
     );
     expect(screen.getByText(/Welcome/i)).toBeInTheDocument();
   });
@@ -22,12 +22,12 @@ describe('App Routing', () => {
   test('should render ShowDetails component on /show route', () => {
     render(
       <ShowProvider>
-      <MemoryRouter initialEntries={['/show']}>
-        <Routes>
-          <Route path="/show" element={<ShowDetails />} />
-        </Routes>
-      </MemoryRouter>
-      </ShowProvider>
+        <MemoryRouter initialEntries={['/show']}>
+          <Routes>
+            <Route path="/show" element={<ShowDetails />} />
+          </Routes>
+        </MemoryRouter>
+      </ShowProvider>,
     );
     setTimeout(() => {
       expect(screen.getByText(/Get Episodes/i)).toBeInTheDocument();
@@ -37,13 +37,15 @@ describe('App Routing', () => {
   test('should render EpisodeDetails component on /episode route', () => {
     render(
       <ShowProvider>
-      <MemoryRouter initialEntries={['/episode']}>
-        <Routes>
-          <Route path="/episode" element={<EpisodeDetails />} />
-        </Routes>
-      </MemoryRouter>
-      </ShowProvider>
+        <MemoryRouter initialEntries={['/episode']}>
+          <Routes>
+            <Route path="/episode" element={<EpisodeDetails />} />
+          </Routes>
+        </MemoryRouter>
+      </ShowProvider>,
     );
-    expect(screen.getByText(/Nenhum episódio selecionado!/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Nenhum episódio selecionado!/i),
+    ).toBeInTheDocument();
   });
 });

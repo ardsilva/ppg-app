@@ -3,8 +3,6 @@
 
 # 🌟 Powerpuff Girls Show - React + TypeScript 🌟
 
-![Powerpuff Girls](https://media.giphy.com/media/l0MYGBI8s3pNfHXX2/giphy.gif)
-
 Bem-vindo ao projeto **Powerpuff Girls Show**! 💖 Este é um projeto front-end construído com **React**, **TypeScript**, **Jest** e **React Testing Library**, utilizando o padrão de design de **átomos e moléculas**. A aplicação exibe detalhes de um show e seus episódios, com testes unitários para garantir a funcionalidade.
 
 ## 🚀 Demo

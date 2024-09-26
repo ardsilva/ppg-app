@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import { ShowDetails } from './ShowDetails';
-import { MemoryRouter, useNavigate } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import { ShowProvider } from '../../context/ShowContext';
 
@@ -8,10 +8,10 @@ import { ShowProvider } from '../../context/ShowContext';
 global.fetch = jest.fn();
 
 // Mock useNavigate
-const mockNavigate = jest.fn();  
+const mockNavigate = jest.fn();
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
-  useNavigate: () => mockNavigate,  
+  useNavigate: () => mockNavigate,
 }));
 
 describe('ShowDetails Component', () => {
@@ -32,19 +32,18 @@ describe('ShowDetails Component', () => {
 
     render(
       <ShowProvider>
-      <MemoryRouter>
-        <ShowDetails />
-      </MemoryRouter>
-      </ShowProvider>
+        <MemoryRouter>
+          <ShowDetails />
+        </MemoryRouter>
+      </ShowProvider>,
     );
-
 
     await waitFor(() => {
       expect(screen.getByText('Powerpuff Girls')).toBeInTheDocument();
       expect(screen.getByText('This is the summary')).toBeInTheDocument();
       expect(screen.getByAltText('ppg-poster')).toHaveAttribute(
         'src',
-        'https://via.placeholder.com/150'
+        'https://via.placeholder.com/150',
       );
     });
   });
@@ -73,10 +72,10 @@ describe('ShowDetails Component', () => {
 
     render(
       <ShowProvider>
-      <MemoryRouter>
-        <ShowDetails />
-      </MemoryRouter>
-      </ShowProvider>
+        <MemoryRouter>
+          <ShowDetails />
+        </MemoryRouter>
+      </ShowProvider>,
     );
 
     await waitFor(() => {
@@ -91,5 +90,4 @@ describe('ShowDetails Component', () => {
       expect(screen.getByText(/Episode 2/)).toBeInTheDocument();
     });
   });
-
 });

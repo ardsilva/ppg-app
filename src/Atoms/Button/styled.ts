@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 const blue = {
   200: '#99CCFF',
@@ -27,4 +27,4 @@ export const StyledButton = styled.button(
     background-color: ${blue[600]};
   }
   `,
-)
+);

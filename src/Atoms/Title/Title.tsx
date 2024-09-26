@@ -1,13 +1,11 @@
-import { StyledTitle } from "./styled"
+import { StyledTitle } from './styled';
 
 type TitleProps = {
-  title: string | undefined,
+  title: string | undefined;
+};
+
+function Title({ title }: TitleProps) {
+  return <StyledTitle>{title}</StyledTitle>;
 }
 
-function Title({title}: TitleProps) {
-  return (
-      <StyledTitle>{title}</StyledTitle>
-  )
-}
-
-export default Title
+export default Title;

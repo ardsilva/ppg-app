@@ -23,7 +23,9 @@ interface ShowContextType {
 
 const ShowContext = createContext<ShowContextType | undefined>(undefined);
 
-export const ShowProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+export const ShowProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [show, setShow] = useState<Show | null>(null);
   const [episodes, setEpisodes] = useState<Episode[] | null>(null);
 

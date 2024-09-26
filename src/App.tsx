@@ -1,17 +1,10 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
-
-import { ShowDetails } from "./Molecules/ShowDetails/ShowDetails";
-import { Home } from "./Molecules/Home/Home";
-import { EpisodeDetails } from "./Molecules/EpisodeDetails/EpisodeDetailts";
-import { ShowProvider } from "./context/ShowContext";
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ShowDetails } from './Molecules/ShowDetails/ShowDetails';
+import { Home } from './Molecules/Home/Home';
+import { EpisodeDetails } from './Molecules/EpisodeDetails/EpisodeDetailts';
+import { ShowProvider } from './context/ShowContext';
 
 export default function App() {
-  
   return (
     <ShowProvider>
       <Router>
@@ -24,4 +17,3 @@ export default function App() {
     </ShowProvider>
   );
 }
-

@@ -1,14 +1,12 @@
-import { StyledButton } from "./styled"
+import { StyledButton } from './styled';
 
 type ButtonProps = {
-  handleClick: any,
-  text: string,
+  handleClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  text: string;
+};
+
+function Button({ handleClick, text }: ButtonProps) {
+  return <StyledButton onClick={handleClick}>{text}</StyledButton>;
 }
 
-function Button({handleClick, text}: ButtonProps) {
-  return (
-    <StyledButton onClick={handleClick}>{text}</StyledButton>
-  )
-}
-
-export default Button
+export default Button;
